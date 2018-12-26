@@ -1,0 +1,232 @@
+form {
+	margin: 130px 0 130px 0;
+}
+input, select, textarea, button {
+	font-family: inherit;
+}
+
+.header-forms {
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 13px;
+}
+
+.ui-control {
+	position: relative;
+}
+.ui-control__select,
+.ui-control__textarea,
+.ui-control__input {
+	box-sizing: border-box;
+	padding: 12px 14px;
+	line-height: 18px;
+	font-size: 13px;
+	width: 100%;
+	border: 1px solid #999999;
+	color: #333;
+	background-color: #fff;
+}
+
+.ui-control__select:focus,
+.ui-control__textarea:focus,
+.ui-control__input:focus {
+	background-color: #e9f8ff;
+	color: #000;
+}
+
+.ui-control__input::-moz-placeholder { color: #97a1aa; opacity: 1; }
+.ui-control__input::-webkit-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__input:-ms-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__input::-ms-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__input::placeholder { color: #97a1aa; opacity: 1;} 
+
+.ui-control__textarea::-moz-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__textarea::-webkit-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__textarea:-ms-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__textarea::-ms-input-placeholder { color: #97a1aa; opacity: 1;}
+.ui-control__textarea::placeholder { color: #97a1aa; opacity: 1;} 
+
+.ui-control__select {
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+appearance: none;
+text-indent: 0.01px;
+text-overflow: '';
+padding-right: 28px;
+background: #fff no-repeat right 10px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAMAAAALbFwWAAAAYFBMVEWfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLCfqLDimmyiAAAAH3RSTlMAAQMGCQoLDQ+RmJudn6KkpqqrrrG2uLq8v8DBxcbVoACZ7gAAAEZJREFUeNotx0cSgDAMBMGVhckmRxP2/79E5aJPM3iDQ6Ljg5ldOjexh25sxXrgooA/WIsErtZ2F6uGe4akuMno8SvPmMN8msMDSvpNjsoAAAAASUVORK5CYII=);
+
+}
+
+.ui-control__select::-ms-expand {
+	display: none;
+}
+
+.ui-control__textarea {
+	min-height: 170px;
+	resize: vertical;
+}
+
+.ui-control__whith--icon {
+	padding-left: 44px;
+
+}
+
+.ui-control__icon {
+	pointer-events: none;
+	position: absolute;
+	top: 10px;
+	left: 14px; 	
+	width: 24px;
+	height: 24px;
+	background: transparent url(../icon/sprite.png) no-repeat;
+}
+
+.ui-control__icon--lock {
+	background-position: 0 0px;
+} 
+:focus ~ .ui-control__icon--lock {
+	background-position: -24px 0;
+}
+
+.ui-control__icon--phone {
+	background-position: 0 -72px;
+} 
+
+:focus ~ .ui-control__icon--phone {
+	background-position: -24px -72px;
+}
+
+.ui-control__icon--message {
+	background-position: 0 -96px;
+} 
+:focus ~ .ui-control__icon--message {
+	background-position:-24px -96px;
+}
+
+
+/*Кнопки*/
+
+
+.form-buttons__button {
+	width: 105px;
+	height: 45px;
+	border: 1px solid #999;
+	background-color: #fff;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.form-buttons__button:hover {
+	background-color:#52359d;
+	color: #fff;
+}
+
+.form-buttons__button:active {
+	background-color:#333;
+	color: #999;
+}
+
+.form-buttons__button--upload{
+	width: 175px;
+	height: 43px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	line-height: 45px;
+	position: relative;
+}
+
+.form-buttons__button--upload:hover .ui-control__icon--upload	{
+ 	background-position: -72px -120px ;
+	color: #fff;
+}
+
+.form-buttons__button--upload:active .ui-control__icon--upload	{
+ 	background-position: -48px -120px ;
+	color: #999;
+}
+
+.form-buttons__button--upload-text {
+	margin-left: 24px;
+}
+
+.ui-control__icon--upload {
+	position: absolute;
+	top: 9px;
+	left: 25px;
+	background-position: 0 -120px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/*Чекбокс*/
+
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.checkbox__text {
+  position: relative;
+  padding: 0 23px 0 31px;
+  cursor: pointer;
+}
+
+.checkbox__text:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: transparent url(../icon/sprite-radio.png) no-repeat;
+  background-position: 0 -25px;
+}
+
+.checkbox input:checked + .checkbox__text {
+  color: #52359d;
+}
+
+.checkbox input:checked + .checkbox__text:before {
+  background-position: -25px -25px;
+
+}
+
+
+/*Радио*/
+
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio__text {
+  position: relative;
+  padding: 0 23px 0 31px;
+  cursor: pointer;
+}
+
+.radio__text:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: transparent url(../icon/sprite-radio.png) no-repeat;
+  background-position: 0 0;
+}
+
+.radio input:checked + .radio__text:before {
+  background-position: -25px 0;
+}
+
+.radio input:checked + .radio__text {
+  color: #52359d;
+}

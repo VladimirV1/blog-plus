@@ -5,6 +5,7 @@
 	<title>UI-FORMS</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/module-grid.css">
+	<link rel="stylesheet" href="css/ui-forms.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900i" rel="stylesheet">
 </head>
 <body>
@@ -48,11 +49,145 @@
 						</ul>
 					</div>
 				</div>
-				
 			</div>
 			
 			<a href="#" class="button">Вход</a>
 		</div>
 	</header>
+
+	<section>
+		<div class="conteiner">
+			<form>
+				<div class="module-grid module-grid--gutters">
+
+					<!-- ========Инпут======== -->
+					
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<input type="text" class="ui-control__input" placeholder="Input text placeholder">
+						</div>
+					</div>
+
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<input type="text" class="ui-control__input ui-control__whith--icon" placeholder="Input text placeholder">
+							<div class="ui-control__icon ui-control__icon--lock"></div>
+						</div>
+					</div>
+
+					<!-- ========Селект======== -->
+
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<select class="ui-control__select">
+								<option value="1">Lorem ipsum dolor.</option>
+								<option value="2">Lorem ipsum dolor.</option>
+								<option value="2">Lorem ipsum dolor.</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<select class="ui-control__select ui-control__whith--icon">
+								<option value="1">Lorem ipsum dolor.</option>
+								<option value="2">Lorem ipsum dolor.</option>
+								<option value="2">Lorem ipsum dolor.</option>
+							</select>
+							<div class="ui-control__icon ui-control__icon--phone"></div>	
+						</div>
+					</div>
+
+					<!-- ========Чекбокс======== -->
+
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="form-checkbox">
+
+							<label class="checkbox">
+				 				<input type="checkbox" checked>
+				 				 <span class="checkbox__text">Lorem ipsum dolor</span>
+							</label>
+
+							<label class="checkbox">
+				 				<input type="checkbox">
+				 				 <span class="checkbox__text">Lorem ipsum dolor</span>
+							</label>
+
+							<label class="checkbox">
+				 				<input type="checkbox">
+				 				 <span class="checkbox__text">Lorem ipsum dolor</span>
+							</label>
+
+						</div>
+					</div>
+
+					<!-- ========Радио======== -->
+
+					<div class="module-grid__cell-6">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="form-radio">
+							<label class="radio">
+				  				<input type="radio" name="r" checked>
+				  				<span class="radio__text">Lorem ipsum dolor</span>
+							</label>
+
+							<label class="radio">
+				  				<input type="radio" name="r">
+				  				<span class="radio__text">Lorem ipsum dolor</span>
+							</label>
+
+							<label class="radio">
+				  				<input type="radio" name="r">
+				  				<span class="radio__text">Lorem ipsum dolor</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- ========ТекстАреа======== -->
+
+					<div class="module-grid__cell-12">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<textarea class="ui-control__textarea" placeholder="Textarea placeholder"></textarea>
+						</div>
+					</div>
+
+					<div class="module-grid__cell-12">
+						<div class="header-forms">Lorem ipsum</div>
+
+						<div class="ui-control">
+							<textarea class="ui-control__textarea ui-control__whith--icon" placeholder="Textarea placeholder"></textarea>
+							<div class="ui-control__icon ui-control__icon--message"></div>
+						</div>
+					</div>
+
+					<!-- ========Кнопки======== -->
+
+					<div class="form-buttons">
+						<button type="submit" class="form-buttons__button">SUBMIT</button>
+						<button type="reset" class="form-buttons__button">RESET</button>
+						<button type="button" class="form-buttons__button">BUTTON</button>
+			 			<label class="form-buttons__button form-buttons__button--upload">
+			 				<span class="ui-control__icon ui-control__icon--upload"></span>
+	        				<span class="form-buttons__button--upload-text">UPLOAD FILE</span>
+	        				<input type="file" hidden>
+	        			</label>
+	        		</div>
+				</div>
+			</form>
+		</div>
+	</section>
 </body>
 </html>
